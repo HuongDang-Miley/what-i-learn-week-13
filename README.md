@@ -1,8 +1,18 @@
-#Moneday
+#Monday
 ## Flexbox
 Flexbox always target the parent container
+~~~
+#parent {
+display: flex;
+justify-content: space-around;
+align-item: center;
+}
+
+
+~~~
 #Tuesday
-## create multiple tag with class, id without typing
+## Emnet syntax
+create multiple tag with class in mass, id without typing manually
 ~~~
 div.square*5 enter -> create 5 div with class square
 div.container>div#item${ITEM $}*5 -> create 1 div container that has 5 children div with id = item1 - item5 and has the text range from 'ITEM 1' to 'ITEM 5'
