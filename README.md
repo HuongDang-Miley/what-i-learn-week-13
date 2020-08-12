@@ -53,3 +53,9 @@ or
 ~~~
 @media (min-width: 401px) and (max-width: 801px) {} 400px < width <= 799px
 ~~~
+#Wednesday
+## grid
+To layout whole website (flex can be applied to smaller section like nav, header, etc)
+~~~
+.app{
+display: grid;
