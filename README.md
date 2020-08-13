@@ -59,3 +59,22 @@ To layout whole website (flex can be applied to smaller section like nav, header
 ~~~
 .app{
 display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-areas:
+"img1 img1 img2"
+"img1 img1 img2"
+;
+}
+.img1 {
+grid-row: 1/2; // or 1 span 1
+grid-column: 1/2; // or 1 span 2
+// if use grid area, don't need grid-row or grid-column
+grid-area: img1;
+}
+.img2 {
+grid-row: 2/2; // or 2 span 1
+grid-column: 2/1; // or 2 span 1
+// or use grid area
+grid-area: img2;
+}
