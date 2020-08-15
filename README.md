@@ -78,3 +78,36 @@ grid-column: 2/1; // or 2 span 1
 // or use grid area
 grid-area: img2;
 }
+~~~
+#Thursday
+## Arrow function
+this
+~~~
+const add = (a,b) => a+b
+const add = (a,b) => {return a+b} //-> need {} if there are more complicated things inside
+const timeFive = (a) => a * 5 //-> prefered
+const timeFive = a => a * 5
+~~~
+equal this expressive function:
+~~~
+const add = function (a,b) {
+  return a+b
+}
+~~~
+Ex: </br>
+profestion way:
+~~~
+const names = (todos) => todos.map((todo) => todo.text)
+~~~
+Also can do this: (not as clear)
+~~~
+const names2 = todos => todos.map(todo => todo.text)
+~~~
+if take 1 parameter, don't need ()
+~~~
+const add = (n) => n + 5;
+~~~
+equal this (doesn't look like function but works)
+~~~
+const add3 = n => n + 5;
+~~~
